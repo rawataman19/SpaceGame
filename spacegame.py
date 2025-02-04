@@ -12,7 +12,7 @@ closewindow  =False
 white= (255,255,255)
 
 #player
-playerImage = pygame.image.load('alien.png')
+playerImage = pygame.image.load('Images/alien.png')
 playerX = 370
 playerY = 480
 block_update=0.3
@@ -22,7 +22,7 @@ def player(x,y):
     gameWindow.blit(playerImage,(x,y))
 
 #enemy
-enemyImage = pygame.image.load('meteor.png')
+enemyImage = pygame.image.load('Images/meteor.png')
 # enemyX = 370
 # enemyY = 50
 enemyX = random.randint(0, 736)
@@ -33,7 +33,7 @@ def enemy(x,y):
     gameWindow.blit(enemyImage,(x,y))
 
 # bullet makeing
-bulletImage = pygame.image.load('ammo.png')
+bulletImage = pygame.image.load('Images/ammo.png')
 bulletX=0
 bulletY=480
 bullet_change=10
